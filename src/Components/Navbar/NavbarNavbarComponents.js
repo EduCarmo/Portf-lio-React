@@ -9,16 +9,16 @@ const NavbarComponents = () => {
 
     return (
         <>
-            <Navbar bg="light" expand="lg" className="shadow-sm">
+            <Navbar expand="lg" style={{ backgroundColor: 'white' }} className="p-4">
                 <Container>
-                    <Navbar.Brand href="#home">Eduardo Carmo</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="logo">Eduardo Carmo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse className="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#about">Sobre</Nav.Link>
-                            <Nav.Link href="#experience">Experiência</Nav.Link>
-                            <Nav.Link href="#projects">Projetos</Nav.Link>
-                            <Nav.Link href="#contact">Contato</Nav.Link>
+                            <Nav.Link href="#about" className="navLink">Sobre</Nav.Link>
+                            <Nav.Link href="#experience" className="navLink">Experiência</Nav.Link>
+                            <Nav.Link href="#projects" className="navLink">Projetos</Nav.Link>
+                            <Nav.Link href="#contact" className="navLink">Contato</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
